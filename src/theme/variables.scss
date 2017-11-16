@@ -34,18 +34,10 @@ $tabs-md-tab-color-active: color($colors, light);
 $tabs-md-tab-color: color($colors, light);
 $tabs-md-tab-text-color: color($colors, light);
 
-$lists-md-background-color: color($colors, secondary);
-$lists-md-text-color: color($colors, light);
+$list-md-background-color: color($colors, secondary);
+$list-md-text-color: color($colors, light);
 
 @import "ionic.theme.default";
-
-
-
-
 @import "ionic.ionicons";
-
-
-
-
 @import "roboto";
 @import "noto-sans";
