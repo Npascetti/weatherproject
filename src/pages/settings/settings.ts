@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Storage } from "@ionic/storage";
-
+import { HomePage} from "../home/home";
 
 
 @IonicPage()
@@ -38,7 +38,8 @@ export class SettingsPage {
       city: this.city,
        state: this.state
     }
-    console.log(location);
+    this.storage.set("location", JSON.stringify(location));
+    this.navCtrl.push(HomePage);
   }
 
 }
